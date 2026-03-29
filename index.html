@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>1 year anniversary</title>
+<style>
+body {
+  text-align:center;
+  font-family:sans-serif;
+  background:#FF559D;
+  color:white;
+}
+button {
+  padding:15px;
+  font-size:18px;
+  background:#d01760;
+  color:white;
+  border:none;
+  border-radius:10px;
+}
+img {
+  width:200px;
+  margin-top:20px;
+  border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>To my favorite person 💕</h1>
+<button onclick="startLove()">Start</button>
+
+<div id="postcard"></div>
+
+<script>
+function startLove() {
+  document.getElementById("postcard").innerHTML = `
+    <h2>1 year anniversary</h2>
+    <img src="photo_2026-03-28_20-13-35.jpg">
+    <p>It's been 365 days with you… Every moment, every smile, means more to me than words can say.</p>
+    <p>You are not just my girlfriend, you are my peace, my happiness, and my home ❤️</p>
+    <h3>And if I had to choose again… I would still choose you. Always. 💍</h3>
+  `;
+}
+</script>
+
+</body>
+</html>
