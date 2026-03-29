@@ -22,6 +22,14 @@ img {
   margin-top:20px;
   border-radius:15px;
 }
+#postcard {
+  animation: fade 2s;
+}
+
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
 </style>
 </head>
 
@@ -31,7 +39,6 @@ img {
 <button onclick="startLove()">Start</button>
 
 <div id="postcard"></div>
-
 <script>
 function startLove() {
   document.getElementById("postcard").innerHTML = `
@@ -41,6 +48,11 @@ function startLove() {
     <p>You are not just my girlfriend, you are my peace, my happiness, and my home ❤️</p>
     <h3>And if I had to choose again… I would still choose you. Always. 💍</h3>
   `;
+   let music = document.createElement("iframe");
+  music.style.display = "none";
+  music.src = "https://youtu.be/emable/Mh52lUjWRmU?list=RDMh52lUjWRmU";
+  
+  document.body.appendChild(music);
 }
 </script>
 
